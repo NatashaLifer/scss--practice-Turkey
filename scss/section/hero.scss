@@ -1,0 +1,42 @@
+.hero {
+    margin-top: 15vh;
+    width: 527px;
+    &__title {
+        @include textSize (700, 64px, 67px);
+    }
+    &__text {
+        @include textSize (400, 24px, 28px);
+    }
+    &__links-btn {
+        @include textSize (500, 18px, 27px);
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 33px;
+        background: $main-red;
+        box-shadow: 0px 2px 4px #831219;
+
+        margin-top: 39px;
+
+    }
+
+    &__social-networks {
+        position: absolute;
+        bottom: 69px;
+        @include flex (center, start) {
+            gap: 20px;
+        }
+        .fb {
+            width: 12px;
+            height: 22px;
+        }
+        .twitter {
+            width: 21px;
+            height: 18px;
+        }
+        .instagram {
+            width: 21px;
+            height: 21px;
+        }
+    }
+    
+}

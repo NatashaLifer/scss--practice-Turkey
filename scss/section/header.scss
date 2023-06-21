@@ -1,0 +1,15 @@
+.navigation {
+    padding-top: 99px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #FFFFFF;
+    @include flex (center, space-between);
+    &__menu {
+        @include flex (center, space-between);
+        gap: 50px;
+    }
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        @include textSize (500, 18px, 21px)
+    }
+}
