@@ -1,6 +1,8 @@
 .hero {
-    margin-top: 15vh;
-    width: 527px;
+   &__content {
+        width: 527px;
+        margin-top: 15vh;
+    }
     &__title {
         @include textSize (700, 64px, 67px);
     }
@@ -16,27 +18,8 @@
         box-shadow: 0px 2px 4px #831219;
 
         margin-top: 39px;
-
     }
 
-    &__social-networks {
-        position: absolute;
-        bottom: 69px;
-        @include flex (center, start) {
-            gap: 20px;
-        }
-        .fb {
-            width: 12px;
-            height: 22px;
-        }
-        .twitter {
-            width: 21px;
-            height: 18px;
-        }
-        .instagram {
-            width: 21px;
-            height: 21px;
-        }
-    }
+    
     
 }

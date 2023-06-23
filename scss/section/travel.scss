@@ -1,26 +1,19 @@
-.travel-option {
-    position: absolute;
-    right: 130px;
-    bottom: 69px;
-    width: 296px;
+.travel {
+    margin-top: 26px;
+    margin-bottom: 69px;
+    @include flex (end, space-between);
+
+    &__content-wrapper {
+        width: 296px;
+        display: flex;
+        flex-direction: column;
+    }
     &__content {
         padding: 23px 35px;
-    }
-    &__content::after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
         background: linear-gradient(90.44deg, rgba(255, 255, 255, 0.5) -3.55%, rgba(255, 255, 255, 0) 120.14%);
         backdrop-filter: blur(11.7037px); 
     }
-    &__content > * {
-        position: relative;
-        z-index: 1;
-    }
+    
     &__title {
         @include textSize (900, 19px, 22px);
         margin-bottom: 4px;
@@ -29,11 +22,8 @@
         @include textSize (400, 14px, 17px);
     }
     &__link {
-        position: relative;
         display: inline-block;
         text-decoration: none;
-        box-sizing: border-box;
-        width: 100%;
         padding: 19px 60px 19px;
         text-align: right;
 
@@ -42,8 +32,25 @@
     }
     &__link::after {
         content: url(../img/arrow.svg);
-        position: absolute;
-        top: 22px;
-        right: 34px;
+        position: relative;
+        left: 14px;
+    }
+
+    &__social-networks {
+        @include flex (center, start) {
+            gap: 20px;
+        }
+        .fb {
+            width: 12px;
+            height: 22px;
+        }
+        .twitter {
+            width: 21px;
+            height: 18px;
+        }
+        .instagram {
+            width: 21px;
+            height: 21px;
+        }
     }
 }

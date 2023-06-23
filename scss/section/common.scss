@@ -5,13 +5,13 @@
   }
   
   .container {
-    margin: 0 100px;
+    width: 1240px;
+    margin: 0 auto;
   }
   
   .wrapper-bg {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/bg.png);
     height: 100vh;
-    position: relative;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
